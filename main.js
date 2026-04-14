@@ -45,7 +45,33 @@ console.log(typeof undefined);
 console.log(typeof null);
 console.log(typeof {});
 console.log(typeof []);
-console.log(typeof function() {});
+console.log(typeof function () { });
 
 let numberX = null;
 console.log(numberX === null);
+
+let num = 42;
+let str = String(num);
+let str2 = num.toString();
+let str3 = "" + num;
+console.log(str, str2, str3);
+
+let strNum = "123";
+let intNum = Number(strNum);
+let int2 = parseInt("42.5");
+let float = parseFloat("3.14");
+console.log(intNum, int2, float);
+
+let bool1 = Boolean(1);
+let bool2 = Boolean(0);
+console.log(bool1, bool2);
+
+console.log("5" + 3);
+console.log("5" - 3);
+console.log("5" * "2");
+console.log(true + 1);
+console.log(false + 1);
+console.log(null + 1);
+console.log(undefined + 1);
+
+console.log("5" + 3 + 2);
